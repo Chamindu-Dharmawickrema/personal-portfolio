@@ -61,30 +61,30 @@ export const Home = () => {
     
 
     return (
-        <RevealOnScroll>
-        <section id="home" className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 pt-16 sm:pt-20">
+        <RevealOnScroll delay={"-50px"}>
+        <section id="home" className=" min-h-screen w-full flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 pt-16 sm:pt-20">
         
         <div className="flex flex-col items-center justify-between gap-6 sm:gap-8  max-w-7xl mx-auto w-full py-8 sm:py-12 md:py-16 mt-6 sm:mt-8 md:mt-10 lg:flex-row">
         
             <div className="text-center w-full  lg:text-left order-1 lg:order-1">
 
                 <div className="min-h-[8rem] sm:min-h-[9rem] md:min-h-[10rem]">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[67px] font-bold leading-tight text-center lg:text-left">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] xl:text-[59px] font-bold leading-tight text-center lg:text-left ">
                         Hi, I'm <br/>
                         <span className="bg-gradient-to-r from-blue-600 to-cyan-300 bg-clip-text text-transparent inline-block break-words">{displayText}&nbsp;</span>
                     </h1>
                 </div>
 
-                <p className="mt-4 sm:mt-5 md:mt-6 text-base sm:text-lg text-gray-300 max-w-xl px-6 sm:px-0 mx-auto lg:mx-0 leading-8">
-                    I'm proud of my portfolio as it reflects my passion for innovation and creative problem-solving. I thrive on challenges and am driven by the chance to make meaningful contributions that bring value to both organizations and the communities they impact.
+                <p className="mt-4 sm:mt-5 md:mt-6 text-base lg:mt-0 xl:mt-5 sm:text-lg text-gray-300 max-w-xl px-6 sm:px-0 mx-auto lg:mx-0 leading-8">
+                    I'm passionate about using technology to create impactful solutions that address real-world problems. My portfolio showcases not only my technical skills but also my dedication to continuous learning and thoughtful design. I take pride in turning ideas into tangible results that drive progress and make a positive difference.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-5 ml-15 mr-15 mt-6 sm:mt-8 md:mt-10 mx-auto lg:mx-0 justify-center lg:justify-start">
-                    <a href="#contact" className="bg-blue-500 text-white py-2.5 sm:py-3 px-5 sm:px-6 rounded-4xl font-semibold transition-all duration-300 hover:translate-y-0.5 hover:shadow-lg text-center">
+                    <a href="#contact" className="text-[15px] bg-blue-500 text-white py-2 sm:py-2.5 px-5 sm:px-6 rounded-4xl font-semibold transition-all duration-300 hover:translate-y-0.5 hover:shadow-lg text-center">
                         Contact Me
                     </a>
 
-                    <a href="/Chamindu.pdf" download className="border border-blue-500/50 text-blue-500 py-2.5 sm:py-3 px-5 sm:px-6 rounded-4xl font-semibold transition-all duration-300 hover:translate-y-0.5 hover:bg-blue-500/10 text-center">
+                    <a href="/Chamindu Dharmawickrama.pdf" download className="text-[15px] border border-blue-500/50 text-blue-500 py-2 sm:py-2.5 px-5 sm:px-6 rounded-4xl font-semibold transition-all duration-300 hover:translate-y-0.5 hover:bg-blue-500/10 text-center">
                         Download CV
                     </a>
                 </div>
@@ -94,9 +94,9 @@ export const Home = () => {
             {/*image*/}
             <div className="order-2 lg:order-2 mt-8 lg:mt-0">
                 <div className="relative">
-                    <div className="absolute -inset-1 rounded-xl blur-xl  bg-white opacity-20"></div>
+                    <div className="absolute -inset-1 rounded-xl blur-xl  bg-white opacity-10"></div>
                         <img 
-                            src="/chamindu.jpg" 
+                            src="/chaminduNew.jpg" 
                             alt="Chamindu Dharmawickrama" 
                             className="relative w-48 sm:w-56 md:w-64 lg:w-80 xl:w-106 rounded-xl shadow-xl object-cover transition-all duration-500 hover:scale-105"
                         />

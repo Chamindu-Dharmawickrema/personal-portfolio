@@ -8,6 +8,12 @@ html, body{
   color: #f3f4f6;
 } 
 
+@media (min-width: 1100px) {
+  .custom-text-size {
+    font-size: 41px;
+  }
+}
+
 @layer utilities{
   /*first line (div) goes to the -100 after it came to the 250 on x bar*/
   @keyframes loading {
@@ -36,8 +42,6 @@ html, body{
   }
 }
 
-
-/* Keyframes: Diagonal movement ↘️ to ↖️ */
 @keyframes bg-pan-diagonal {
   0% {
     background-position: 100% 100%;
@@ -50,20 +54,16 @@ html, body{
   }
 }
 
-/* Custom class for the animated background */
 .bg-animate-diagonal {
-  background: linear-gradient(135deg, #0d1f4f, #000000, #0d1f4f); /* 135deg = ↘️ */
-  background-size: 200% 200%;
+  background: linear-gradient(135deg, #0d1f4f, #000000, #0d1f4f);
   animation: bg-pan-diagonal 8s ease-in-out infinite;
 }
-
 
 .reveal {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);

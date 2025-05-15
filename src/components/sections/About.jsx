@@ -21,7 +21,7 @@ export const About = () => {
     const [option ,setOption] = useState("skills")
 
     return (
-        <RevealOnScroll>
+        <RevealOnScroll delay={"-50px"}>
         <section id='about' className='min-h-screen flex flex-col items-center justify-center py-20'>
             <div className='max-w-3xl mx-auto px-4'>
                 <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-cyan-300 bg-clip-text text-transparent text-center'>About me</h2>
@@ -29,16 +29,16 @@ export const About = () => {
 
             <div className='rounded-xl p-4 sm:p-8 border-white/10 border max-w-3xl  ml-5 sm:ml-0 mr-5 sm:mr-0 mx-auto px-4 hover:translate-y-1 transition-all'>
                 <p className='text-gray-300 mb-6 text-center text-[18px] leading-8'>
-                    I am a Software Engineering undergraduate at the Informatics Institute of Technology Sri Lanka, affiliated with the University of Westminster, UK. My academic journey has equipped me with a strong foundation in programming, algorithms, and data structures. I take pride in my portfolio, which reflects my passion for creative problem-solving and building impactful solutions. I am always eager to take on new challenges and contribute meaningfully to organizations and communities. Beyond my studies, I am fascinated by exploring new areas in web development and emerging technologies, continuously seeking opportunities to grow and innovate.
+                    I am a Software Engineering undergraduate at the Informatics Institute of Technology, Sri Lanka, affiliated with the University of Westminster, UK. Throughout my academic journey, I have developed a solid grounding in software development principles, including programming, systems design, and database management. My portfolio highlights my enthusiasm for solving real-world problems through innovative and efficient solutions. I am constantly motivated to embrace new challenges and make valuable contributions to both industry and society. Outside of my coursework, I have a keen interest in web technologies and staying updated with the latest trends in the tech world, always striving to expand my skills and knowledge.
                 </p>
             </div>
 
-            <div className='mt-10 max-w-3xl mx-auto'>
+            <div className='mt-10 max-w-3xl mx-auto flex justify-center'>
                 <button className={`text-[20px] mr-10 px-5 py-1.5 font-semibold cursor-pointer transition-colors ${option === "skills" ? "text-blue-500" : "text-white hover:text-blue-500"}`} onClick={()=>setOption("skills")}>
                     Skills
                 </button>
                 
-                <button className={`text-[20px] mr-10 px-5 py-1.5 font-semibold cursor-pointer transition-colors ${option === "edu" ? "text-blue-500" : "text-white hover:text-blue-500"}`} onClick={()=>setOption("edu")}>
+                <button className={`text-[20px] px-5 py-1.5 font-semibold cursor-pointer transition-colors ${option === "edu" ? "text-blue-500" : "text-white hover:text-blue-500"}`} onClick={()=>setOption("edu")}>
                     Education
                 </button>
             </div>

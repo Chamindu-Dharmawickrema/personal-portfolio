@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { RevealOnScroll } from '../RevealOnScroll';
 
 export const Projects = () => {
@@ -17,8 +18,23 @@ export const Projects = () => {
 
     ]
 
+    function useWindowWidth() {
+      const [width, setWidth] = useState(window.innerWidth);
+
+      useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+
+      return width;
+    }
+
+    const width = useWindowWidth();
+    const delay = width <= 640 ? "250px" : "-50px"; 
+
   return (
-    <RevealOnScroll>
+    <RevealOnScroll delay={delay}>
     <section id='project' className='min-h-screen flex flex-col items-center justify-center'>
       <div className='max-w-3xl mx-auto px-4 mt-10'>
         <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-cyan-300 bg-clip-text text-transparent'>My Projects</h2>
