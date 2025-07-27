@@ -80,7 +80,7 @@ export const Projects = () => {
             technologies: ["React", "TailwindCSS"],
             pic: "../projects/portfolio.png",
             link: "https://chamindudharmawickrema.netlify.app/",
-            git: "",
+            git: "https://github.com/Chamindu-Dharmawickrema/personal-portfolio.git",
         },
     ];
 
