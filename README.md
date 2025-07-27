@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Chamindu Dharmawickrama - Portfolio Website
 
 A modern, responsive portfolio website built with React and Vite, showcasing my journey as a Software Engineering undergraduate and full-stack developer.
@@ -241,8 +240,3 @@ This project is open source and available under the [MIT License](LICENSE).
 -   🐙 GitHub: [View my repositories](https://github.com/Chamindu-Dharmawickrema)
 
 ---
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> a7ef10d1b839215512f4b181b8c2498fa5f085a8
